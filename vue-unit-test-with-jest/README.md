@@ -1,4 +1,4 @@
-# unittestwithjest
+# vue-unit-test-with-jest
 
 ## Project setup
 ```
