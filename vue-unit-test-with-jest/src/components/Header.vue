@@ -4,7 +4,7 @@
             <i class="el-icon-menu"></i>
             <!-- <img src="../../../static/img/logo.png" alt=""> -->
         </div>
-        <div class="logo">Unit-test</div>
+        <div class="logo">Unit-test-with-jest</div>
         <div class="user-info">
             <!--trigger="click" 则需要点击才会下拉菜单，默认是hover-->
             <el-dropdown  @command="handleCommand">
@@ -146,7 +146,7 @@ export default {
     }
     .header .logo{
         float: left;
-        width:150px;
+        width:200px;
         /* text-align: center; */
     }
     .user-info {

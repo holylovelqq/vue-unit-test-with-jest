@@ -53,7 +53,7 @@ export default {
             {
               icon: 'arrow-right-a',
               index: 'vips',
-              title: '超级VIP用户'
+              title: 'VIP 用户'
             }
           ]
         }
