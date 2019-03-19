@@ -1,18 +1,74 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="wrapper">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="content" :class="{'content--collapse':collapse}">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import AppHeader from '@/components/Header.vue'
+import AppSidebar from '@/components/Sidebar.vue'
+import eventHub from '@/assets/js/EventHub.js'
+import { checkWidth } from '@/assets/js/CommonMethods.js'
 export default {
-  name: 'home',
+  name: 'layout',
   components: {
-    HelloWorld
+    AppHeader,
+    AppSidebar
+  },
+  data () {
+    return {
+      collapse: checkWidth() === 'sm' || checkWidth() === 'md'
+    }
+  },
+  methods: {
+
+  },
+  created () {
+    eventHub.$on('collapse', msg => {
+      this.collapse = msg
+    })
+  },
+  mounted () {
+
+  },
+  watch: {
+
+  },
+  computed: {
+
   }
 }
 </script>
+<style>
+.content{
+  position: absolute;
+  left: 230px;
+  right: 0;
+  top: 64px;
+  bottom:0;
+  width: auto;
+  padding: 32px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+}
+.content--collapse{
+  left: 0;
+}
+
+@media screen and (max-width:1025px) {
+  .content{
+    left: 0;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .content{
+    padding: 12px 12px 30px;
+  }
+}
+</style>
