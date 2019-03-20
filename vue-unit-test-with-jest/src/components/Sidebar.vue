@@ -6,18 +6,18 @@
         <template v-if="item.subs">
           <el-submenu :index="item.index" :key="item.index">
             <template slot="title">
-              <Icon :type="item.icon" size="25"/>
+              <i :class="item.icon"></i>
               <span slot="title" style="margin-left: 10px">{{ item.title }}</span>
             </template>
             <el-menu-item v-for="(subItem, i) in item.subs" :key="i" :index="subItem.index" style="margin-left: 10px">
-              <Icon :type='subItem.icon' size="15" />
+              <i :class="subItem.icon"></i>
               <span slot="title" style="margin-left: 10px">{{ subItem.title }}</span>
             </el-menu-item>
           </el-submenu>
         </template>
         <template v-else>
           <el-menu-item :index="item.index" :key="item.index">
-            <Icon :type="item.icon" size="25"/>
+            <i :class="item.icon"></i>
             <span slot="title" style="margin-left: 10px" color="white">{{ item.title }}</span>
           </el-menu-item>
         </template>
@@ -36,22 +36,22 @@ export default {
       collapse: checkWidth() === 'sm' || checkWidth() === 'md',
       items: [
         {
-          icon: 'ios-gear',
+          icon: 'el-icon-tickets',
           index: 'overview',
           title: '系统概览'
         },
         {
-          icon: 'ios-paper',
+          icon: 'el-icon-sort',
           index: 'user',
           title: '用户管理',
           subs: [
             {
-              icon: 'arrow-right-a',
+              icon: 'el-icon-arrow-right',
               index: 'users',
               title: '普通用户'
             },
             {
-              icon: 'arrow-right-a',
+              icon: 'el-icon-d-arrow-right',
               index: 'vips',
               title: 'VIP 用户'
             }

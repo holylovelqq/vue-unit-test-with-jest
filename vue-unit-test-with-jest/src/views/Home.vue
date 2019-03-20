@@ -57,12 +57,12 @@ export default {
   transition: left .3s ease-in-out;
 }
 .content--collapse{
-  left: 0;
+  left: 65px;
 }
 
 @media screen and (max-width:1025px) {
   .content{
-    left: 0;
+    left: 65px;
   }
 }
 

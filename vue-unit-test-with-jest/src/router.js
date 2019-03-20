@@ -10,18 +10,17 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
       component: Home,
       children: [
         {
           path: '/',
           name: 'home',
-          component: () => import('@/views/DashBoard.vue')
+          component: () => import('@/views/OverView.vue')
         },
         {
           path: '/overview',
-          name: 'dashboard',
-          component: () => import('@/views/DashBoard.vue')
+          name: 'OverView',
+          component: () => import('@/views/OverView.vue')
         },
         {
           path: '/users',

@@ -14,6 +14,8 @@ Vue.component('AppButton', AppButton)
 
 Vue.prototype.$moment = Moment
 Vue.prototype.$axios = Axios
+// 伪造的数据库地址
+Axios.defaults.baseURL = 'http:xxx.com/api/'
 
 Vue.use(ElementUI)
 
