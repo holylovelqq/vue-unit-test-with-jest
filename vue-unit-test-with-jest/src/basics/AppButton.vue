@@ -2,7 +2,7 @@
 <template>
   <button
     :class="cssClasses"
-    v-on:click="$emit('click')"
+    v-on:click="onClick"
     :disabled="disabled"
   >
     <slot></slot>
@@ -32,12 +32,15 @@ export default {
       default: false
     }
   },
+  methods: {
+    onClick(){
+      this.$emit('click','i am params') //此处的参数'i am params'纯为测试准备，并未真正使用
+    }
+  },
   computed: {
     cssClasses () {
       let classes = ['app-button']
-      if (this.size) {
-        classes.push('app-button--' + this.size)
-      }
+      classes.push('app-button--' + this.size)
       if (this.type && !this.disabled) {
         classes.push('app-button--' + this.type)
       }
