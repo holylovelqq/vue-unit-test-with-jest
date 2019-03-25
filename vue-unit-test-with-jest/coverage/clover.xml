@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553494537192" clover="3.2.0">
-  <project timestamp="1553494537192" name="All files">
-    <metrics statements="78" coveredstatements="22" conditionals="24" coveredconditionals="8" methods="13" coveredmethods="1" elements="115" coveredelements="31" complexity="0" loc="78" ncloc="78" packages="5" files="10" classes="10">
+<coverage generated="1553504683197" clover="3.2.0">
+  <project timestamp="1553504683197" name="All files">
+    <metrics statements="78" coveredstatements="23" conditionals="24" coveredconditionals="8" methods="13" coveredmethods="2" elements="115" coveredelements="33" complexity="0" loc="78" ncloc="78" packages="5" files="10" classes="10">
       <package name="src">
         <metrics statements="29" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <file name="main.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\main.js">
@@ -49,9 +49,9 @@
           <metrics statements="10" coveredstatements="3" conditionals="10" coveredconditionals="1" methods="2" coveredmethods="1"/>
           <line num="10" count="0" type="stmt"/>
           <line num="15" count="0" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
-          <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
-          <line num="25" count="1" type="stmt"/>
+          <line num="23" count="4" type="stmt"/>
+          <line num="24" count="4" type="cond" truecount="1" falsecount="1"/>
+          <line num="25" count="4" type="stmt"/>
           <line num="26" count="0" type="cond" truecount="0" falsecount="4"/>
           <line num="27" count="0" type="stmt"/>
           <line num="28" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -78,7 +78,7 @@
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="0"/>
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <file name="Header.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\Header.vue">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="19" count="1" type="stmt"/>
@@ -87,13 +87,13 @@
           <line num="32" count="2" type="stmt"/>
         </file>
         <file name="Sidebar.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\Sidebar.vue">
-          <metrics statements="6" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="0"/>
+          <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
           <line num="30" count="1" type="stmt"/>
           <line num="31" count="1" type="stmt"/>
-          <line num="35" count="1" type="stmt"/>
-          <line num="65" count="1" type="stmt"/>
-          <line num="70" count="1" type="stmt"/>
-          <line num="71" count="0" type="stmt"/>
+          <line num="35" count="4" type="stmt"/>
+          <line num="65" count="4" type="stmt"/>
+          <line num="70" count="4" type="stmt"/>
+          <line num="71" count="3" type="stmt"/>
         </file>
       </package>
       <package name="src.views">

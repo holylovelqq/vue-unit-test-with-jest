@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar.vue snapshot test 1`] = `
+<div class="sidebar">
+  <el-menu-stub mode="vertical" defaultactive="vips" uniqueopened="true" router="true" menutrigger="hover" collapse="true" backgroundcolor="#324157" textcolor="white" activetextcolor="#20a0ff" collapsetransition="true" class="sidebar-el-menu">
+    <el-menu-item-stub index="overview"><i class="el-icon-tickets"></i> <span color="white" style="margin-left: 10px;">系统概览</span></el-menu-item-stub>
+    <el-submenu-stub offset="0" boundariespadding="5" popperoptions="[object Object]" index="user" showtimeout="300" hidetimeout="300"><template></template>
+      <el-menu-item-stub index="users" style="margin-left: 10px;"><i class="el-icon-arrow-right"></i> <span style="margin-left: 10px;">普通用户</span></el-menu-item-stub>
+      <el-menu-item-stub index="vips" style="margin-left: 10px;"><i class="el-icon-d-arrow-right"></i> <span style="margin-left: 10px;">VIP 用户</span></el-menu-item-stub>
+    </el-submenu-stub>
+  </el-menu-stub>
+</div>
+`;
