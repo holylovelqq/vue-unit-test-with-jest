@@ -73,12 +73,12 @@ FN:22,checkWidth
 FNF:2
 FNH:1
 FNDA:0,formatDatetime
-FNDA:4,checkWidth
+FNDA:5,checkWidth
 DA:10,0
 DA:15,0
-DA:23,4
-DA:24,4
-DA:25,4
+DA:23,5
+DA:24,5
+DA:25,5
 DA:26,0
 DA:27,0
 DA:28,0
@@ -86,7 +86,7 @@ DA:29,0
 DA:31,0
 LF:10
 LH:3
-BRDA:24,0,0,4
+BRDA:24,0,0,5
 BRDA:24,0,1,0
 BRDA:26,1,0,0
 BRDA:26,1,1,0

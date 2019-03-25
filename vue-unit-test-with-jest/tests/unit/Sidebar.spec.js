@@ -34,6 +34,8 @@ describe('Sidebar.vue', () => {
   it('checkWidth test', () => {
     // const mockFn = jest.fn()
     // checkWidth = mockFn
+    // window.document.body.offsetWidth的值再测试环境下一直都是0，所以checkWidth的值一致都是sm，无法改变
+    expect(checkWidth() === 'sm').toBeTruthy()
     expect(wrapper.vm.collapse).toBeTruthy()
     // expect(wrapper.vm.collapse).toBeFalsy()
   })
