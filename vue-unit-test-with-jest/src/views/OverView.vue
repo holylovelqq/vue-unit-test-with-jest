@@ -22,7 +22,7 @@
 export default {
   data () {
     return {
-      userInput: '121',
+      userInput: '',
       toggleShow: true,
       usersInfo: []
     }

@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">30% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>3/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">10% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/10</span>
+        <span class='fraction'>1/10</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">50% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>1/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">30% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>3/10</span>
       </div>
     </div>
   </div>
@@ -76,16 +76,11 @@
 31
 32
 33
-34</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+34</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -95,29 +90,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import Vue from 'vue'</span>
-<span class="cstat-no" title="statement not covered" >import store from '@/store.js'</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Vue from 'vue'
+import store from '@/store.js'
 &nbsp;
 /**
  * 格式化时间
  * @params date :utctime-'YYYY-MM-DDTHH:mm:ss.SSSZ'
  * @returns 指定时区的时间
  */
-export function <span class="fstat-no" title="function not covered" >formatDatetime (date) {</span>
+export function <span class="fstat-no" title="function not covered" >formatDatetime </span>(date) {
   var m = <span class="cstat-no" title="statement not covered" >Vue.prototype.$moment.utc(date, 'YYYY-MM-DDTHH:mm:ss.SSSZ')</span>
   // タイムゾーンは分で指定する
   // 日本：9*60=54min
@@ -130,10 +130,10 @@ export function <span class="fstat-no" title="function not covered" >formatDatet
  * 获取当前视口的宽度，判断默认样式
  * @returns 'sm'&lt;769&lt;='md'&lt;1025&lt;=lg&lt;1367&lt;=hg
  */
-export function <span class="fstat-no" title="function not covered" >checkWidth () {</span>
-  let width = <span class="cstat-no" title="statement not covered" >window.document.body.offsetWidth</span>
-<span class="cstat-no" title="statement not covered" >  if (width &lt; 769) {</span>
-<span class="cstat-no" title="statement not covered" >    return 'sm'</span>
+export function checkWidth () {
+  let width = window.document.body.offsetWidth
+  <span class="missing-if-branch" title="else path not taken" >E</span>if (width &lt; 769) {
+    return 'sm'
   } else <span class="cstat-no" title="statement not covered" >if (width &gt;= 769 &amp;&amp; width &lt; 1025) {</span>
 <span class="cstat-no" title="statement not covered" >    return 'md'</span>
   } else <span class="cstat-no" title="statement not covered" >if (width &gt;= 1025 &amp;&amp; width &lt; 1367) {</span>
@@ -148,7 +148,7 @@ export function <span class="fstat-no" title="function not covered" >checkWidth 
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 22 2019 15:05:11 GMT+0900 (GMT+09:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Mar 25 2019 15:15:36 GMT+0900 (東京 (標準時))
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
