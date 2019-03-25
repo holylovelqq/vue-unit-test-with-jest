@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header.vue snapshot test 1`] = `
+<div class="header">
+  <div class="collapse-btn"><i class="el-icon-menu"></i></div>
+  <div class="logo">Unit-test-with-jest</div>
+  <div class="text">
+    本页面用于展示一些单元测试用例，供vue项目单元测试使用，布局样式等如有BUG，请忽略
+  </div>
+  <div class="user-info"><span class="el-dropdown-link"><img src="../assets/img.jpg" class="user-logo">
+          admin
+      </span></div>
+</div>
+`;
