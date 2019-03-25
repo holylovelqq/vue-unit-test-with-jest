@@ -5,7 +5,9 @@
     v-on:click="onClick"
     :disabled="disabled"
   >
-    <slot></slot>
+    <slot>submit</slot>
+    <!-- 下面的命名插槽，实际并未使用，是为了测试而存在 -->
+    <slot name="namedSlot"></slot>
   </button>
 </template>
 
@@ -33,8 +35,8 @@ export default {
     }
   },
   methods: {
-    onClick(){
-      this.$emit('click','i am params') //此处的参数'i am params'纯为测试准备，并未真正使用
+    onClick () {
+      this.$emit('click', 'i am params') // 此处的参数'i am params'纯为测试准备，并未真正使用
     }
   },
   computed: {

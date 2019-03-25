@@ -5,18 +5,20 @@
  * computed
  * func
  * $emit
+ * slots（普通插槽和命名插槽）
+ * DOM测试
  */
 import { shallowMount } from '@vue/test-utils'
 import AppButton from '@/basics/AppButton.vue'
 
 describe('AppButton.vue', () => {
   /**
-   *本测试因为计算属性和props直接关联，所以就一起写测试了，
-   * 实际项目中大部分props和computed是分开进行测试的，应该尽量一个it测试一个项目
+   * 每个it测试一个小项目
+   * 为了便于理解所以注释较多，使用时酌情增减
   */
   it('props and computed test', () => {
     // 测试内容：props
-    // 自定义props传递给AppButton组件，判断组件有获取到props，然后计算属性执行，给button标签增加新的class名
+    // 自定义props传递给AppButton组件，判断组件有获取到props
     const buttonProps = {
       type: 'danger',
       size: 'lg',
@@ -29,15 +31,15 @@ describe('AppButton.vue', () => {
     expect(wrapper.props().size).toBe('lg')
     expect(wrapper.props().type).toBe('danger')
     expect(wrapper.props().disabled).toBe(true)
-    // 每个it最后都应该销毁wrapper，其他测试中会将此操作写在afterEach（）内
+    // 每个it最后都应该销毁wrapper
     wrapper.destroy()
   })
 
+  // 测试内容：computed(要注意计算属性不是函数，是变量，测试时很容易看着组件内写法按照函数测试)
+  // 改变props的type，size，disable值时，cssClasses的值也会跟着改变
   it('computed test', () => {
-    // 测试内容：computed(要注意计算属性不是函数，是变量，测试时很容易看着组件内写法按照函数测试)
-    // 改变props的type，size，disable值时，cssClasses的值也会跟着改变
     const wrapper = shallowMount(AppButton)
-    // 设置props 断言computed计算属性
+    // 设置props 断言computed计算属性（注意props有default值）
     wrapper.setProps({ type: 'danger' })
     expect(wrapper.vm.cssClasses).toBe('app-button app-button--md app-button--danger')
     wrapper.setProps({ size: 'lg' })
@@ -48,9 +50,9 @@ describe('AppButton.vue', () => {
     wrapper.destroy()
   })
 
+  // 测试内容：func测试
+  // 点击按钮组件时，正确触发点击事件
   it('click button onClick is clled', () => {
-    // 测试内容：func测试
-    // 点击按钮组件时，正确触发点击事件
     const wrapper = shallowMount(AppButton)
     // 创建mock函数
     const mockFn = jest.fn()
@@ -70,8 +72,9 @@ describe('AppButton.vue', () => {
     wrapper.destroy()
   })
 
+  // 测试内容：$emit
+  // 函数被触发后，emit的函数也会被触发
   it('when onClick is called $emit is called', () => {
-    // 测试内容：$emit
     const wrapper = shallowMount(AppButton)
     // 测试$emmit函数被正确触发
     // mock函数替代点击按钮后$emit的函数，此处函数名相同，依然为click
@@ -90,9 +93,61 @@ describe('AppButton.vue', () => {
 
     wrapper.destroy()
   })
+
+  // 测试内容：slots 普通插槽
+  // 测试默认值
+  it('slots test', () => {
+    const wrapper = shallowMount(AppButton)
+    const button = wrapper.find('button')
+    expect(button.text()).toBe('submit')
+    wrapper.destroy()
+  })
+
+  // 测试内容：slots 普通插槽
+  // mount时传入自定义的内容作为slots，然后再断言自定义的内容存在与否
+  // 自定义的内容可能会是text，html，componets等允许的内容
+  it('slots test', () => {
+    const wrapper = shallowMount(AppButton, {
+      slots: {
+        default: 'i am slots text' // 自定义slots内容
+      }
+    })
+    const button = wrapper.find('button')
+    expect(button.text()).toBe('i am slots text')
+
+    wrapper.destroy()
+  })
+
+  // 测试内容：slots具名插槽->vue2.6更新后的新语法v-slots，3.0中会延续使用，并废除旧语法（在此提醒注意，不影响测试代码的书写）
+  // 测试方法与slots普通插槽相同，此处传入为html,
+  // 当传入组件时，只需断言wrapper中是否包含组件的DOM元素即可
+  // expect(wrapper.contains('.container')).toBe(true)
+  it('named slots test', () => {
+    const wrapper = shallowMount(AppButton, {
+      slots: {
+        namedSlot: `<span>i am slots html</span>` // 自定义slots内容
+      }
+    })
+    const button = wrapper.find('button')
+    expect(button.contains('span')).toBe(true)
+    const span = wrapper.find('button span')
+    expect(span.text()).toBe('i am slots html')
+
+    wrapper.destroy()
+  })
+
+  // 测试内容：snapshot->概括的测试DOM结构
+  // 如果组件内存在比较特殊的需要测试的DOM结构的话，可以单独测试
   it('matches snapshot', () => {
-    // 测试内容：DOM结构snapshot
     const wrapper = shallowMount(AppButton)
     expect(wrapper.html()).toMatchSnapshot()
+    wrapper.destroy()
+  })
+
+  // 测试内容：精准DOM结构测试示例，一般组件不需要
+  it('matches snapshot', () => {
+    const wrapper = shallowMount(AppButton)
+    expect(wrapper.contains('button')).toBeTruthy()
+    wrapper.destroy()
   })
 })

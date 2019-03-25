@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppButton.vue matches snapshot 1`] = `<button class="app-button app-button--md app-button--primary"></button>`;
+exports[`AppButton.vue matches snapshot 1`] = `<button class="app-button app-button--md app-button--primary">submit </button>`;
