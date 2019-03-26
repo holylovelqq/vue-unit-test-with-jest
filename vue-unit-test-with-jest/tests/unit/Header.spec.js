@@ -1,7 +1,7 @@
 /**
  * Header.vue组件
  * 单元测试包括以下
- * data
+ * data v-bind
  * func
  * eventHub（$emit）
  */
@@ -22,7 +22,7 @@ describe('Header.vue', () => {
     wrapper.destroy()
   })
 
-  // 测试内容：data
+  // 测试内容：data v-bind
   // 断言data中变量的默认值
   it('data test', () => {
     expect(wrapper.vm.name).toBe('admin')
