@@ -33,7 +33,7 @@ import { checkWidth } from '@/assets/js/CommonMethods.js'
 export default {
   data () {
     return {
-      collapse: checkWidth() === 'sm' || checkWidth() === 'md',
+      collapse: checkWidth(),
       items: [
         {
           icon: 'el-icon-tickets',

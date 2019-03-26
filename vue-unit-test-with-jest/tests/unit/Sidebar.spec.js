@@ -32,12 +32,9 @@ describe('Sidebar.vue', () => {
 
   // 测试内容：data中的函数checkWidth()
   it('checkWidth test', () => {
-    // const mockFn = jest.fn()
-    // checkWidth = mockFn
-    // window.document.body.offsetWidth的值再测试环境下一直都是0，所以checkWidth的值一致都是sm，无法改变
-    expect(checkWidth() === 'sm').toBeTruthy()
+    // window.document.body.offsetWidth的值再测试环境下一直都是0，所以checkWidth的值一致都是true，无法改变
+    expect(checkWidth()).toBeTruthy()
     expect(wrapper.vm.collapse).toBeTruthy()
-    // expect(wrapper.vm.collapse).toBeFalsy()
   })
 
   // 测试内容：computed计算属性onRoutes

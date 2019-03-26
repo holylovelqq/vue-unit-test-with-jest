@@ -17,17 +17,13 @@ export function formatDatetime (date) {
 
 /**
  * 获取当前视口的宽度，判断默认样式
- * @returns 'sm'<769<='md'<1025<=lg<1367<=hg
+ * @returns true<1025<=false
  */
-export function checkWidth () {
-  let width = window.document.body.offsetWidth
-  if (width < 769) {
-    return 'sm'
-  } else if (width >= 769 && width < 1025) {
-    return 'md'
-  } else if (width >= 1025 && width < 1367) {
-    return 'lg'
+export function checkWidth (size) {
+  let width = size || window.document.body.offsetWidth
+  if (width < 1025) {
+    return true
   } else {
-    return 'hg'
+    return false
   }
 }

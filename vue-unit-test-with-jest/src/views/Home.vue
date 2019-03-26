@@ -20,7 +20,7 @@ export default {
   },
   data () {
     return {
-      collapse: checkWidth() === 'sm' || checkWidth() === 'md'
+      collapse: checkWidth()
     }
   },
   methods: {
