@@ -154,18 +154,18 @@ describe('AppButton.vue', () => {
     wrapper.destroy()
   })
 
+  // 测试内容：精准DOM结构测试示例
+  it('matches snapshot', () => {
+    const wrapper = shallowMount(AppButton)
+    expect(wrapper.contains('button')).toBeTruthy()
+    wrapper.destroy()
+  })
+
   // 测试内容：snapshot->概括的测试DOM结构
   // 如果组件内存在比较特殊的需要测试的DOM结构的话，可以单独测试
   it('matches snapshot', () => {
     const wrapper = shallowMount(AppButton)
     expect(wrapper.html()).toMatchSnapshot()
-    wrapper.destroy()
-  })
-
-  // 测试内容：精准DOM结构测试示例，一般组件不需要
-  it('matches snapshot', () => {
-    const wrapper = shallowMount(AppButton)
-    expect(wrapper.contains('button')).toBeTruthy()
     wrapper.destroy()
   })
 })
