@@ -9,6 +9,7 @@
 import { shallowMount } from '@vue/test-utils'
 import Header from '@/components/Header.vue'
 import eventHub from '@/assets/js/EventHub.js'
+import { checkWidth } from '@/assets/js/CommonMethods.js'
 
 describe('Header.vue', () => {
   let wrapper
@@ -25,9 +26,16 @@ describe('Header.vue', () => {
   // 断言data中变量的默认值
   it('data test', () => {
     expect(wrapper.vm.name).toBe('admin')
-    expect(wrapper.vm.collapse).toBeFalsy()
+    expect(wrapper.vm.collapse).toBeTruthy() // 函数checkWidth()在测试环境下的值一致都是true
     wrapper.vm.name = 'holy'
     expect(wrapper.find('.el-dropdown-link').text()).toBe('holy')
+  })
+
+  // 测试内容：data中的函数checkWidth()
+  it('checkWidth test', () => {
+    // window.document.body.offsetWidth的值再测试环境下一直都是0，所以checkWidth的值一致都是true，无法改变
+    expect(checkWidth()).toBeTruthy()
+    expect(wrapper.vm.collapse).toBeTruthy()
   })
 
   // 测试内容：
@@ -50,16 +58,16 @@ describe('Header.vue', () => {
     eventHub.$on('collapse', mockFn)
     // 第一次触发函数
     wrapper.vm.collapseChage()
-    expect(wrapper.vm.collapse).toBeTruthy()
-    expect(mockFn).toBeCalled()
-    expect(mockFn).toHaveBeenCalledTimes(1)
-    expect(mockFn).toHaveBeenCalledWith(true)
-    // 第二次出发函数
-    wrapper.vm.collapseChage()
     expect(wrapper.vm.collapse).toBeFalsy()
     expect(mockFn).toBeCalled()
-    expect(mockFn).toHaveBeenCalledTimes(2)
+    expect(mockFn).toHaveBeenCalledTimes(1)
     expect(mockFn).toHaveBeenCalledWith(false)
+    // 第二次出发函数
+    wrapper.vm.collapseChage()
+    expect(wrapper.vm.collapse).toBeTruthy()
+    expect(mockFn).toBeCalled()
+    expect(mockFn).toHaveBeenCalledTimes(2)
+    expect(mockFn).toHaveBeenCalledWith(true)
   })
 
   // 测试内容：snapshot->概括的测试DOM结构

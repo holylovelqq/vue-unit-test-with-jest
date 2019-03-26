@@ -17,10 +17,11 @@
 </template>
 <script>
 import eventHub from '@/assets/js/EventHub.js'
+import { checkWidth } from '@/assets/js/CommonMethods.js'
 export default {
   data () {
     return {
-      collapse: false,
+      collapse: checkWidth(),
       name: 'admin'
     }
   },
