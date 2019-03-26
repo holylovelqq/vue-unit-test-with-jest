@@ -136,6 +136,24 @@ describe('AppButton.vue', () => {
     wrapper.destroy()
   })
 
+  // 测试内容：slots作用域插槽->vue2.6更新后的新语法v-slots，3.0中会延续使用，并废除旧语法（在此提醒注意，不影响测试代码的书写）
+  // 测试方法与slots具名插槽相同，此处传入为html,
+  // 当传入组件时，只需断言wrapper中是否包含组件的DOM元素即可
+  // expect(wrapper.contains('.container')).toBe(true)
+  it('named slots test', () => {
+    const wrapper = shallowMount(AppButton, {
+      scopedSlots: {
+        scopedSlot: `<span slot-scope="foo">{{ foo.user.lastName }}</span>` // 自定义slots内容
+      }
+    })
+    const button = wrapper.find('button')
+    expect(button.contains('span')).toBe(true)
+    const span = wrapper.find('button span')
+    expect(span.text()).toBe('holy')
+
+    wrapper.destroy()
+  })
+
   // 测试内容：snapshot->概括的测试DOM结构
   // 如果组件内存在比较特殊的需要测试的DOM结构的话，可以单独测试
   it('matches snapshot', () => {

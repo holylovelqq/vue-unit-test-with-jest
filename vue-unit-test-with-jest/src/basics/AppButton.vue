@@ -6,8 +6,9 @@
     :disabled="disabled"
   >
     <slot>submit</slot>
-    <!-- 下面的命名插槽，实际并未使用，是为了测试而存在 -->
+    <!-- 下面的命名插槽和作用域插槽，实际并未使用，是为了测试而存在 -->
     <slot name="namedSlot"></slot>
+    <slot name="scopedSlot" :user="user"></slot>
   </button>
 </template>
 
@@ -32,6 +33,15 @@ export default {
     disabled: {
       type: Boolean,
       default: false
+    }
+  },
+  data () {
+    return {
+      // 变量user实际并未使用只是为了展示作用于插槽的测试写法而存在
+      user: {
+        firstName: 'li',
+        lastName: 'holy'
+      }
     }
   },
   methods: {
