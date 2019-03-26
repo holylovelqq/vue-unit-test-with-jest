@@ -1,10 +1,6 @@
 
 <template>
-  <button
-    :class="cssClasses"
-    v-on:click="onClick"
-    :disabled="disabled"
-  >
+  <button :class="cssClasses" v-on:click="onClick" :disabled="disabled">
     <slot>submit</slot>
     <!-- 下面的命名插槽和作用域插槽，实际并未使用，是为了测试而存在 -->
     <slot name="namedSlot"></slot>
@@ -66,7 +62,6 @@ export default {
 </script>
 
 <style scoped>
-
 /* Base Style */
 .app-button {
   border: none;
@@ -88,30 +83,30 @@ export default {
 .app-button > i {
   margin-right: 4px;
 }
- /* Button Type */
+/* Button Type */
 
- /* Primary */
+/* Primary */
 .app-button--primary {
   color: #fff;
-  background: #1C93E2;
+  background: #1c93e2;
 }
 .app-button--primary:hover {
-  background: lighten(#1C93E2, 2%);
+  background: lighten(#1c93e2, 2%);
   box-shadow: 0px 2px 12px rgba(0, 153, 255, 0.7);
 }
 .app-button--primary:focus {
-  background: darken(#1C93E2, 2%);
+  background: darken(#1c93e2, 2%);
   box-shadow: 0px 2px 8px rgba(0, 153, 255, 0.7);
 }
 
- /* Secondary */
+/* Secondary */
 .app-button--secondary {
-  color: #43555E;
-  border: 2px solid #D8E0E6;
+  color: #43555e;
+  border: 2px solid #d8e0e6;
   background: #fff;
 }
 .app-button--secondary:hover {
-  color: liten(#43555E, 20%);
+  color: liten(#43555e, 20%);
   box-shadow: 0px 1px 8px rgba(150, 150, 150, 0.3);
 }
 .app-button--secondary:focus {
@@ -122,67 +117,67 @@ export default {
 /*  Floating Action */
 .app-button--floating {
   color: #fff;
-  background: #1C93E2;
+  background: #1c93e2;
   box-shadow: 0px 3px 12px rgba(0, 153, 255, 0.7);
 }
 .app-button--floating:hover {
-  background: lighten(#1C93E2, 3%);
+  background: lighten(#1c93e2, 3%);
   box-shadow: 0px 5px 16px rgba(0, 153, 255, 0.7);
 }
 .app-button--floating:focus {
-  background: darken(#1C93E2, 3%);
+  background: darken(#1c93e2, 3%);
   box-shadow: 0px 4px 12px rgba(0, 153, 255, 0.7);
 }
 
- /* Text */
+/* Text */
 .app-button--text {
-  color: #43555E;
+  color: #43555e;
   background: none;
 }
 .app-button--text:hover {
-  color: #1C93E2;
+  color: #1c93e2;
   background-color: rgba(160, 217, 255, 0.26);
 }
 .app-button--text:focus {
   background-color: darken(rgba(160, 217, 255, 0.26), 12%);
 }
 
- /* Link */
+/* Link */
 .app-button--link {
-  color: #96ACB7;
+  color: #96acb7;
   background: none;
 }
 .app-button--link:hover {
-  color: #1C93E2;
+  color: #1c93e2;
 }
 
- /* Danger (like a delete button) */
+/* Danger (like a delete button) */
 .app-button--danger {
-  color: #F9486C;
+  color: #f9486c;
   background: none;
 }
 .app-button--danger:hover {
-  color: darken(#F9486C, 6%);
+  color: darken(#f9486c, 6%);
   background: rgba(255, 155, 161, 0.18);
 }
 .app-button--danger:focus {
   background-color: darken(rgba(255, 155, 161, 0.18), 12%);
 }
 
- /* Disabled */
+/* Disabled */
 .app-button--disabled {
-  color: lighten(#96ACB7, 6%);
+  color: lighten(#96acb7, 6%);
   background: darken(#eaeff3, 2%);
   cursor: not-allowed;
 }
 .app-button--disabled:hover {
-  color: lighten(#96ACB7, 6%);
+  color: lighten(#96acb7, 6%);
   background: darken(#eaeff3, 2%);
 }
 
- /* Size */
+/* Size */
 
- /* Small */
+/* Small */
 .app-button--sm {
   font-size: 12px;
   padding: 8px 10px;
@@ -193,7 +188,7 @@ export default {
 .app-button--sm .app-button--link {
   padding: 0;
 }
- /* Middle */
+/* Middle */
 .app-button--md {
   font-size: 14px;
   padding: 10px 14px;
@@ -205,7 +200,7 @@ export default {
   padding: 0;
 }
 
- /* Large */
+/* Large */
 .app-button--lg {
   font-size: 16px;
   padding: 12px 16px;

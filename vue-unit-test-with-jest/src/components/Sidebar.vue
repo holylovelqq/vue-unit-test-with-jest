@@ -1,7 +1,16 @@
 <template>
   <div class="sidebar">
-    <el-menu class="sidebar-el-menu" :default-active="onRoutes" :collapse="collapse" background-color="#324157"
-             text-color="white" active-text-color="#20a0ff" unique-opened router collapse-transition>
+    <el-menu
+      class="sidebar-el-menu"
+      :default-active="onRoutes"
+      :collapse="collapse"
+      background-color="#324157"
+      text-color="white"
+      active-text-color="#20a0ff"
+      unique-opened
+      router
+      collapse-transition
+    >
       <template v-for="item in items">
         <template v-if="item.subs">
           <el-submenu :index="item.index" :key="item.index">
@@ -9,7 +18,12 @@
               <i :class="item.icon"></i>
               <span slot="title" style="margin-left: 10px">{{ item.title }}</span>
             </template>
-            <el-menu-item v-for="(subItem, i) in item.subs" :key="i" :index="subItem.index" style="margin-left: 10px">
+            <el-menu-item
+              v-for="(subItem, i) in item.subs"
+              :key="i"
+              :index="subItem.index"
+              style="margin-left: 10px"
+            >
               <i :class="subItem.icon"></i>
               <span slot="title" style="margin-left: 10px">{{ subItem.title }}</span>
             </el-menu-item>
@@ -75,20 +89,19 @@ export default {
 </script>
 
 <style scoped>
-  .sidebar {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 70px;
-    bottom: 0;
-  }
+.sidebar {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  bottom: 0;
+}
 
-  .sidebar-el-menu:not(.el-menu--collapse) {
-    width: 200px;
-  }
+.sidebar-el-menu:not(.el-menu--collapse) {
+  width: 200px;
+}
 
-  .sidebar > ul {
-    height: 100%;
-  }
-
+.sidebar > ul {
+  height: 100%;
+}
 </style>

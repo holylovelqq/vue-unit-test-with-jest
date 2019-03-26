@@ -23,51 +23,43 @@ export default {
       collapse: checkWidth()
     }
   },
-  methods: {
-
-  },
+  methods: {},
   created () {
     eventHub.$on('collapse', msg => {
       this.collapse = msg
     })
   },
-  mounted () {
-
-  },
-  watch: {
-
-  },
-  computed: {
-
-  }
+  mounted () {},
+  watch: {},
+  computed: {}
 }
 </script>
 <style>
-.content{
+.content {
   position: absolute;
   left: 230px;
   right: 0;
   top: 64px;
-  bottom:0;
+  bottom: 0;
   width: auto;
   padding: 32px;
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-transition: left .3s ease-in-out;
-  transition: left .3s ease-in-out;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
-.content--collapse{
+.content--collapse {
   left: 65px;
 }
 
-@media screen and (max-width:1025px) {
-  .content{
+@media screen and (max-width: 1025px) {
+  .content {
     left: 65px;
   }
 }
 
-@media screen and (max-width:769px) {
-  .content{
+@media screen and (max-width: 769px) {
+  .content {
     padding: 12px 12px 30px;
   }
 }
