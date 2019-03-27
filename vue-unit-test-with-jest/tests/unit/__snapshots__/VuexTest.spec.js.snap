@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VuexTest.vue snapshot test 1`] = `
+<div class="example vuex">
+  <h2 class="example_title">vuex的单元测试例</h2>
+  <app-button-stub size="lg">更改vuex内的变量值</app-button-stub>
+</div>
+`;

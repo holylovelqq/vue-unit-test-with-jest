@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouterTest.vue snapshot test 1`] = `
+<div class="example router">
+  <h2 class="example_title">路由跳转的单元测试例</h2>
+  <app-button-stub size="lg">跳转到VIP用户页面</app-button-stub>
+</div>
+`;

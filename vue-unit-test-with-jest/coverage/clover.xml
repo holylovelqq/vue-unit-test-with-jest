@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553654042193" clover="3.2.0">
-  <project timestamp="1553654042193" name="All files">
-    <metrics statements="76" coveredstatements="45" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="6" elements="103" coveredelements="64" complexity="0" loc="76" ncloc="76" packages="5" files="10" classes="10">
+<coverage generated="1553662079525" clover="3.2.0">
+  <project timestamp="1553662079525" name="All files">
+    <metrics statements="83" coveredstatements="52" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="6" elements="110" coveredelements="71" complexity="0" loc="83" ncloc="83" packages="5" files="14" classes="14">
       <package name="src">
         <metrics statements="29" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <file name="main.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\main.js">
@@ -75,7 +75,26 @@
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="26" coveredstatements="26" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <file name="AxiosTest.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\AxiosTest.vue">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="11" count="4" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+        </file>
+        <file name="FilterTest.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\FilterTest.vue">
+          <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="14" count="5" type="stmt"/>
+          <line num="22" count="24" type="cond" truecount="2" falsecount="0"/>
+          <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+        </file>
         <file name="Header.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\Header.vue">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="17" count="2" type="stmt"/>
@@ -83,6 +102,10 @@
           <line num="21" count="5" type="stmt"/>
           <line num="29" count="2" type="stmt"/>
           <line num="30" count="2" type="stmt"/>
+        </file>
+        <file name="RouterTest.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\RouterTest.vue">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="12" count="1" type="stmt"/>
         </file>
         <file name="Sidebar.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\Sidebar.vue">
           <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -93,9 +116,13 @@
           <line num="84" count="4" type="stmt"/>
           <line num="85" count="3" type="stmt"/>
         </file>
+        <file name="VuexTest.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\VuexTest.vue">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="12" count="1" type="stmt"/>
+        </file>
       </package>
       <package name="src.views">
-        <metrics statements="20" coveredstatements="20" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="Home.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\views\Home.vue">
           <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="11" count="1" type="stmt"/>
@@ -107,20 +134,12 @@
           <line num="29" count="1" type="stmt"/>
         </file>
         <file name="OverView.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\views\OverView.vue">
-          <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
-          <line num="27" count="10" type="stmt"/>
-          <line num="36" count="38" type="cond" truecount="2" falsecount="0"/>
-          <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
-          <line num="38" count="1" type="stmt"/>
-          <line num="39" count="1" type="stmt"/>
-          <line num="40" count="1" type="stmt"/>
-          <line num="42" count="1" type="stmt"/>
-          <line num="48" count="2" type="stmt"/>
-          <line num="54" count="2" type="stmt"/>
-          <line num="57" count="1" type="stmt"/>
-          <line num="58" count="1" type="stmt"/>
-          <line num="59" count="1" type="stmt"/>
-          <line num="63" count="1" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>
