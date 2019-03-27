@@ -4,7 +4,7 @@
       <i class="el-icon-menu"></i>
     </div>
     <div class="logo">Unit-test-with-jest</div>
-    <div class="text">本页面用于展示一些单元测试用例，供vue项目单元测试使用，布局样式等如有BUG，请忽略</div>
+    <div class="tips">本页面用于展示一些单元测试用例，供vue项目单元测试使用，布局样式等如有BUG，请忽略</div>
     <div class="user-info">
       <span class="el-dropdown-link">
         <img class="user-logo" src="../assets/img.jpg">
@@ -58,7 +58,7 @@ export default {
   width: 200px;
   /* text-align: center; */
 }
-.header .text {
+.header .tips {
   float: left;
 }
 .user-info {
