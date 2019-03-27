@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553662079525" clover="3.2.0">
-  <project timestamp="1553662079525" name="All files">
-    <metrics statements="83" coveredstatements="52" conditionals="14" coveredconditionals="13" methods="13" coveredmethods="6" elements="110" coveredelements="71" complexity="0" loc="83" ncloc="83" packages="5" files="14" classes="14">
+<coverage generated="1553670542403" clover="3.2.0">
+  <project timestamp="1553670542403" name="All files">
+    <metrics statements="91" coveredstatements="51" conditionals="16" coveredconditionals="13" methods="17" coveredmethods="6" elements="124" coveredelements="70" complexity="0" loc="91" ncloc="91" packages="5" files="14" classes="14">
       <package name="src">
-        <metrics statements="29" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="39" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <file name="main.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\main.js">
           <metrics statements="18" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -38,21 +38,29 @@
           <line num="43" count="0" type="stmt"/>
         </file>
         <file name="store.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\store.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="3" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
+          <metrics statements="12" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
+          <line num="10" count="0" type="stmt"/>
+          <line num="11" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
         </file>
       </package>
       <package name="src.assets.js">
-        <metrics statements="7" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <file name="CommonMethods.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\assets\js\CommonMethods.js">
-          <metrics statements="6" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+          <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="6" count="13" type="cond" truecount="2" falsecount="0"/>
+          <line num="7" count="13" type="cond" truecount="1" falsecount="1"/>
+          <line num="8" count="13" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="23" count="13" type="cond" truecount="2" falsecount="0"/>
-          <line num="24" count="13" type="cond" truecount="1" falsecount="1"/>
-          <line num="25" count="13" type="stmt"/>
-          <line num="27" count="0" type="stmt"/>
         </file>
         <file name="EventHub.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\assets\js\EventHub.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -118,7 +126,7 @@
         </file>
         <file name="VuexTest.vue" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\components\VuexTest.vue">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="12" count="1" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.views">
@@ -139,7 +147,7 @@
           <line num="12" count="1" type="stmt"/>
           <line num="13" count="1" type="stmt"/>
           <line num="14" count="1" type="stmt"/>
-          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>

@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">50% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>1/2</span>
+        <span class='fraction'>0/12</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -61,17 +61,31 @@
 16
 17
 18
-19</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+19
+20
+21
+22
+23
+24
+25
+26
+27</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -79,23 +93,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Vue from 'vue'
-import Vuex from 'vuex'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import Vue from 'vue'</span>
+<span class="cstat-no" title="statement not covered" >import Vuex from 'vuex'</span>
 &nbsp;
-Vue.use(Vuex)
+<span class="cstat-no" title="statement not covered" >Vue.use(Vuex)</span>
+&nbsp;
+const state = <span class="cstat-no" title="statement not covered" >{</span>
+  count: 0
+}
+const mutations = <span class="cstat-no" title="statement not covered" >{</span>
+  increment: <span class="fstat-no" title="function not covered" >state</span> =&gt; <span class="cstat-no" title="statement not covered" >state.count++,</span>
+  decrement: <span class="fstat-no" title="function not covered" >state</span> =&gt; <span class="cstat-no" title="statement not covered" >state.count--</span>
+}
+const actions = <span class="cstat-no" title="statement not covered" >{</span>
+  increment: <span class="fstat-no" title="function not covered" >({</span> commit }) =&gt; <span class="cstat-no" title="statement not covered" >commit('increment'),</span>
+  decrement: <span class="fstat-no" title="function not covered" >({</span> commit }) =&gt; <span class="cstat-no" title="statement not covered" >commit(</span>'decrement')
+}
+const getters = <span class="cstat-no" title="statement not covered" >{</span>
+  evenOrOdd: <span class="fstat-no" title="function not covered" >state</span> =&gt; <span class="cstat-no" title="statement not covered" >state.count % 2 === 0 ? 'even' : '</span>odd'
+}
 &nbsp;
 export default new Vuex.Store({
-  state: {
-    TZone: -(new Date().getTimezoneOffset())
-  },
-  mutations: {
-    tzChange (state, data) {
-<span class="cstat-no" title="statement not covered" >      state.TZone = data</span>
-    }
-  },
-  actions: {
-&nbsp;
-  }
+  state,
+  mutations,
+  actions,
+  getters
 })
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -103,7 +127,7 @@ export default new Vuex.Store({
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Mar 27 2019 13:47:59 GMT+0900 (東京 (標準時))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Mar 27 2019 16:09:02 GMT+0900 (東京 (標準時))
 </div>
 </div>
 <script src="..\prettify.js"></script>

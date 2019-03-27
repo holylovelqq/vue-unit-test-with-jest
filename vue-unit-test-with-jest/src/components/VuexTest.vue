@@ -2,22 +2,21 @@
     <!-- vuex的单元测试例 -->
     <div class="example vuex">
       <h2 class="example_title">vuex的单元测试例</h2>
-      <div class="text">{{storeVal}}</div>
-      <app-button size="lg" @click="changeVal">更改vuex内的变量值</app-button>
+      <div class="text">Clicked: [ {{ $store.state.count }} ] times, count is [ {{ evenOrOdd }} ]</div>
+      <app-button class="add" size="lg" @click="increment">+1</app-button>&nbsp;&nbsp;&nbsp;
+      <app-button class="minus" size="lg" @click="decrement">-1</app-button>
     </div>
 </template>
 <script>
+import { mapGetters, mapActions } from 'vuex'
 export default {
-  data () {
-    return {
-      storeVal: '伪造'
-    }
-  },
-  methods: {
-    changeVal () {
-
-    }
-  }
+  methods: mapActions([
+    'increment',
+    'decrement'
+  ]),
+  computed: mapGetters([
+    'evenOrOdd'
+  ])
 }
 </script>
 <style scoped>

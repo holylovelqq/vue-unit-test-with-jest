@@ -3,6 +3,8 @@
 exports[`VuexTest.vue snapshot test 1`] = `
 <div class="example vuex">
   <h2 class="example_title">vuex的单元测试例</h2>
-  <app-button-stub size="lg">更改vuex内的变量值</app-button-stub>
+  <div class="text">Clicked: [ 0 ] times, count is [ gettersVal ]</div>
+  <app-button-stub size="lg" class="add">+1</app-button-stub>&nbsp;&nbsp;&nbsp;
+  <app-button-stub size="lg" class="minus">-1</app-button-stub>
 </div>
 `;
