@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553671403076" clover="3.2.0">
-  <project timestamp="1553671403076" name="All files">
-    <metrics statements="91" coveredstatements="52" conditionals="16" coveredconditionals="14" methods="17" coveredmethods="6" elements="124" coveredelements="72" complexity="0" loc="91" ncloc="91" packages="5" files="14" classes="14">
+<coverage generated="1553675805621" clover="3.2.0">
+  <project timestamp="1553675805621" name="All files">
+    <metrics statements="89" coveredstatements="62" conditionals="16" coveredconditionals="16" methods="17" coveredmethods="11" elements="122" coveredelements="89" complexity="0" loc="89" ncloc="89" packages="5" files="14" classes="14">
       <package name="src">
-        <metrics statements="39" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <metrics statements="37" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="11" coveredmethods="5"/>
         <file name="main.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\main.js">
           <metrics statements="18" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -38,19 +38,17 @@
           <line num="43" count="0" type="stmt"/>
         </file>
         <file name="store.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\store.js">
-          <metrics statements="12" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+          <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="19" count="2" type="cond" truecount="2" falsecount="0"/>
         </file>
       </package>
       <package name="src.assets.js">

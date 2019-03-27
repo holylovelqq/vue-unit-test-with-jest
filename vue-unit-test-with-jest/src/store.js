@@ -6,15 +6,16 @@ Vue.use(Vuex)
 const state = {
   count: 0
 }
-const mutations = {
+// mutations/actions/getters 前面的export是为了配合测试
+export const mutations = {
   increment: state => state.count++,
   decrement: state => state.count--
 }
-const actions = {
+export const actions = {
   increment: ({ commit }) => commit('increment'),
   decrement: ({ commit }) => commit('decrement')
 }
-const getters = {
+export const getters = {
   evenOrOdd: state => state.count % 2 === 0 ? 'even' : 'odd'
 }
 
