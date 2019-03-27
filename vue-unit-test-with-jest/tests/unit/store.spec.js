@@ -1,7 +1,7 @@
 /**
  * store.js
  * 测试内容包括以下
- * 分别mock依赖测试mutations/actions/getters
+ * 测试思路：mutations/getters/actions 分别测试，测试其中一个的时候，其他依赖伪造mock
  * 本质还是测试方法（官网列出了两种测试方法，我们选择简单易懂便于测试的）
  */
 import { mutations, getters, actions } from '@/store.js'
