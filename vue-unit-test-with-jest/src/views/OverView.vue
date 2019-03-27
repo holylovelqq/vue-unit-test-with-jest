@@ -13,6 +13,7 @@ import AxiosTest from '@/components/AxiosTest.vue'
 import RouterTest from '@/components/RouterTest.vue'
 import VuexTest from '@/components/VuexTest.vue'
 export default {
+  name: 'OverView',
   components: {
     FilterTest,
     AxiosTest,
@@ -28,31 +29,4 @@ export default {
 }
 </script>
 <style scoped>
-.title {
-  margin-bottom: 20px;
-}
-.example {
-  text-align: center;
-  padding: 20px;
-  border: 1px dashed red;
-  margin-bottom: 50px;
-}
-.example_title {
-  margin-bottom: 20px;
-  color: blueviolet;
-}
-.input {
-  width: 500px;
-  margin-bottom: 20px;
-}
-.text {
-  width: 500px;
-  height: 30px;
-  background-color: darkkhaki;
-  margin: 0 auto;
-  line-height: 30px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: deeppink;
-}
 </style>
