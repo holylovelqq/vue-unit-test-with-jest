@@ -77,6 +77,6 @@
     ],
     "testURL": "http://localhost/",
     "collectCoverage": true,
-    "collectCoverageFrom": ["**/src/**.{js,vue}", "!**/node_modules/**"]
+    "collectCoverageFrom": ["**/src/**.{js,vue}", "!**/node_modules/**", "!**src/main.js**", "!**src/router.js**"]
   }
 }
