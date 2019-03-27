@@ -3,7 +3,8 @@
  * 测试内容包括以下
  * func
  * element-ui插件的使用
- * $route
+ * $route（伪造$route便于测试计算属性）
+ * computed
  * DOM
  */
 import { shallowMount, createLocalVue } from '@vue/test-utils'
@@ -15,7 +16,7 @@ import { checkWidth } from '@/assets/js/CommonMethods.js'
 // 创建临时Vue实例，挂载组件中使用的插件
 const localVue = createLocalVue()
 localVue.use(Element)
-// 伪造$route
+// 伪造$route,用于测试计算属性
 const $route = {
   path: '/vips'
 }
