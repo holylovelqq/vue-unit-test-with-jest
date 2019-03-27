@@ -11,7 +11,6 @@
  */
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import OverView from '@/views/OverView.vue'
-import VueRouter from 'vue-router'
 import Element from 'element-ui'
 import axios from 'axios'
 
@@ -21,9 +20,21 @@ jest.mock('axios')
 
 // 创建临时Vue实例，挂载组件中使用的插件
 const localVue = createLocalVue()
-localVue.use(VueRouter)
 localVue.use(Element)
 localVue.prototype.$axios = axios // 挂载axios
+
+// vue-router测试
+// 不建议直接在localVue上挂载vue-router
+// 使用mock的$route和$router更加灵活，方便测试
+const $route = {
+  path: '/some'
+  // ...其他属性
+}
+const mockPush = jest.fn()
+const $router = {
+  push: mockPush
+  // ... 其他属性
+}
 
 describe('OverView.vue', () => {
   // A Wrapper is an object that contains a mounted component or vnode and methods to test the component or vnode
@@ -33,7 +44,11 @@ describe('OverView.vue', () => {
   beforeEach(() => {
     axios.mockClear()
     wrapper = shallowMount(OverView, { localVue,
-      stubs: ['app-button']
+      stubs: ['app-button'],
+      mocks: {
+        $route,
+        $router
+      }
     })
   })
 
@@ -150,19 +165,12 @@ describe('OverView.vue', () => {
     expect(mockFn1).toHaveBeenCalledTimes(1)
   })
 
-  // 测试内容：goVIPs()被调用->router变化
-  //
+  // 测试内容：goVIPs()被调用->触发mock的push函数
   it('goVIPs() is called', () => {
-    // 第一次执行函数
+    // 执行函数
     wrapper.vm.goVIPs()
     // 期望结果
-    expect(wrapper.$route.path).toBe('/vips')
-    // 手动更改值
-    wrapper.$route.path = '/users'
-    // 再次执行函数
-    wrapper.vm.goVIPs()
-    // 期望结果
-    expect(wrapper.$route.path).toBe('/vips')
+    expect(mockPush).toBeCalled()
   })
 
   // 测试内容：snapshot->概括的测试DOM结构
