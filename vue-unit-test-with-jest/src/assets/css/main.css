@@ -144,22 +144,22 @@ a{text-decoration: none}
 /* 全局样式，因本项目是测试教程项目，样式简化在此处 */
 .title {
     margin-bottom: 20px;
-  }
-  .example {
+}
+.example {
     text-align: center;
     padding: 20px;
     border: 1px dashed red;
     margin-bottom: 50px;
-  }
-  .example_title {
+}
+.example_title {
     margin-bottom: 20px;
     color: blueviolet;
-  }
-  .input {
+}
+.input {
     width: 500px;
     margin-bottom: 20px;
-  }
-  .text {
+}
+.text {
     width: 500px;
     height: 30px;
     background-color: darkkhaki;
@@ -168,4 +168,4 @@ a{text-decoration: none}
     margin-bottom: 20px;
     font-weight: 700;
     color: deeppink;
-  }
+}
