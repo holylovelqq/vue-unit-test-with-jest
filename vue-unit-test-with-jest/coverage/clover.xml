@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1553670542403" clover="3.2.0">
-  <project timestamp="1553670542403" name="All files">
-    <metrics statements="91" coveredstatements="51" conditionals="16" coveredconditionals="13" methods="17" coveredmethods="6" elements="124" coveredelements="70" complexity="0" loc="91" ncloc="91" packages="5" files="14" classes="14">
+<coverage generated="1553671403076" clover="3.2.0">
+  <project timestamp="1553671403076" name="All files">
+    <metrics statements="91" coveredstatements="52" conditionals="16" coveredconditionals="14" methods="17" coveredmethods="6" elements="124" coveredelements="72" complexity="0" loc="91" ncloc="91" packages="5" files="14" classes="14">
       <package name="src">
         <metrics statements="39" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <file name="main.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\main.js">
@@ -54,13 +54,13 @@
         </file>
       </package>
       <package name="src.assets.js">
-        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <file name="CommonMethods.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\assets\js\CommonMethods.js">
-          <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-          <line num="6" count="13" type="cond" truecount="2" falsecount="0"/>
-          <line num="7" count="13" type="cond" truecount="1" falsecount="1"/>
-          <line num="8" count="13" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
+          <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="6" count="16" type="cond" truecount="2" falsecount="0"/>
+          <line num="7" count="16" type="cond" truecount="2" falsecount="0"/>
+          <line num="8" count="15" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
         </file>
         <file name="EventHub.js" path="C:\Users\G8235\Documents\vueTest\vue-unit-test-with-jest\src\assets\js\EventHub.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
