@@ -38,7 +38,7 @@ describe('Header.vue', () => {
     expect(wrapper.vm.collapse).toBeTruthy()
   })
 
-  // 测试内容：
+  // 测试内容：collapseChage()
   // 点击折叠侧边栏按钮，正确触发collapseChage函数
   it('click icon func is called', () => {
     const mockFn = jest.fn()

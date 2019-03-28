@@ -16,9 +16,10 @@ describe('AppButton.vue', () => {
    * 每个it测试一个小项目
    * 为了便于理解所以注释较多，实际测试代码中酌情增减
   */
+
+  // 测试内容：props
+  // 自定义props传递给AppButton组件，判断组件有获取到props
   it('props test', () => {
-    // 测试内容：props
-    // 自定义props传递给AppButton组件，判断组件有获取到props
     const buttonProps = {
       type: 'danger',
       size: 'lg',
