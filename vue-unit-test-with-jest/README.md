@@ -1,8 +1,8 @@
 # vue-unit-test-with-jest
-##需要特别说明的
-###手动开启覆盖率提示：package.json文件内 jest下增加配置"collectCoverage": true,
-###自定义测试文件"collectCoverageFrom": ["**/src/**.{js,vue}", "!**/node_modules/**","!**src/main.js**", "!**src/router.js**"]  此处设置为/src/下所有js和vue结尾的文件，排除main.js和router.js（本项目中无需测试）
-###本项目中尽量覆盖可能的测试情况，但是实际项目要更复杂，很多需要多个测试结合使用，强烈建议以搞懂测试思路学习目标
+## 需要特别说明的
+### 手动开启覆盖率提示：package.json文件内 jest下增加配置"collectCoverage": true,
+### 自定义测试文件"collectCoverageFrom": ["**/src/**.{js,vue}", "!**/node_modules/**","!**src/main.js**", "!**src/router.js**"]  此处设置为/src/下所有js和vue结尾的文件，排除main.js和router.js（本项目中无需测试）
+### 本项目中尽量覆盖可能的测试情况，但是实际项目要更复杂，很多需要多个测试结合使用，强烈建议以搞懂测试思路学习目标
 
 ## Project setup
 ```

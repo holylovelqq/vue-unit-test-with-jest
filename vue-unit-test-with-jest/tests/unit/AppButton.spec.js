@@ -14,9 +14,9 @@ import AppButton from '@/basics/AppButton.vue'
 describe('AppButton.vue', () => {
   /**
    * 每个it测试一个小项目
-   * 为了便于理解所以注释较多，使用时酌情增减
+   * 为了便于理解所以注释较多，实际测试代码中酌情增减
   */
-  it('props and computed test', () => {
+  it('props test', () => {
     // 测试内容：props
     // 自定义props传递给AppButton组件，判断组件有获取到props
     const buttonProps = {
@@ -96,7 +96,7 @@ describe('AppButton.vue', () => {
 
   // 测试内容：slots 普通插槽
   // 测试默认值
-  it('slots test', () => {
+  it('slots default value test', () => {
     const wrapper = shallowMount(AppButton)
     const button = wrapper.find('button')
     expect(button.text()).toBe('submit')
@@ -140,7 +140,7 @@ describe('AppButton.vue', () => {
   // 测试方法与slots具名插槽相同，此处传入为html,
   // 当传入组件时，只需断言wrapper中是否包含组件的DOM元素即可
   // expect(wrapper.contains('.container')).toBe(true)
-  it('named slots test', () => {
+  it('scoped slots test', () => {
     const wrapper = shallowMount(AppButton, {
       scopedSlots: {
         scopedSlot: `<span slot-scope="foo">{{ foo.user.lastName }}</span>` // 自定义slots内容
@@ -155,7 +155,7 @@ describe('AppButton.vue', () => {
   })
 
   // 测试内容：精准DOM结构测试示例
-  it('matches snapshot', () => {
+  it('DOM test', () => {
     const wrapper = shallowMount(AppButton)
     expect(wrapper.contains('button')).toBeTruthy()
     wrapper.destroy()

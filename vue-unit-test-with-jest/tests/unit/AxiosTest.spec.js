@@ -62,7 +62,6 @@ describe('AxiosTest.vue', () => {
   it('axios test', () => {
     // 自定义get被拒绝时返回值
     axios.get.mockRejectedValue('error')
-    // 因为是伪造的axios请求，所以默认是会被拒绝的
     return wrapper.vm.getData().catch(e => expect(e).toMatch('error'))
   })
 
