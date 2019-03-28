@@ -21,10 +21,15 @@ describe('VuexTest.vue', () => {
   let actions
   let state
   let getters
+  let mutations
   let store
   beforeEach(() => {
-  // 伪造actions state getters 。mutation在本组件中未直接使用，故未伪造，
+  // 伪造actions state getters mutations
     actions = {
+      increment: jest.fn(),
+      decrement: jest.fn()
+    }
+    mutations = {
       increment: jest.fn(),
       decrement: jest.fn()
     }
@@ -38,6 +43,7 @@ describe('VuexTest.vue', () => {
     store = new Vuex.Store({
       state,
       actions,
+      mutations,
       getters
     })
     // 挂载store
@@ -59,7 +65,7 @@ describe('VuexTest.vue', () => {
     expect(text.text()).toContain(state.count)
   })
 
-  // 测试内容：actions
+  // 测试内容：actions-通过点击按钮直接调用
   // 点击按钮测试伪造的函数是否被调用
   it('actions test', () => {
     const buttonAdd = wrapper.find('.add')
@@ -70,6 +76,48 @@ describe('VuexTest.vue', () => {
     buttonMinus.vm.$emit('click')
     expect(actions.decrement).toHaveBeenCalled()
     expect(actions.decrement).toHaveBeenCalledTimes(1)
+  })
+
+  // 测试内容：dispatchIncrement()
+  // 点击按钮测试函数dispatchIncrement()是否被调用
+  it('dispatchIncrement test', () => {
+    const dispatchAdd = wrapper.find('.dispatchAdd')
+    const mockAdd = jest.fn()
+    wrapper.setMethods({
+      dispatchIncrement: mockAdd
+    })
+    dispatchAdd.vm.$emit('click')
+    expect(mockAdd).toHaveBeenCalled()
+    expect(mockAdd).toHaveBeenCalledTimes(1)
+  })
+
+  // 测试内容：actions--通过dispatch调用
+  // 调用函数测试伪造的函数是否被调用
+  it('dispatch actions test', () => {
+    wrapper.vm.dispatchIncrement()
+    expect(actions.increment).toHaveBeenCalled()
+    expect(actions.increment).toHaveBeenCalledTimes(1)
+  })
+
+  // 测试内容：mutationsDecrement()
+  // 点击按钮测试函数mutationsDecrement()是否被调用
+  it('mutationsDecrement test', () => {
+    const mutationsMinus = wrapper.find('.mutationsMinus')
+    const mockMinus = jest.fn()
+    wrapper.setMethods({
+      mutationsDecrement: mockMinus
+    })
+    mutationsMinus.vm.$emit('click')
+    expect(mockMinus).toHaveBeenCalled()
+    expect(mockMinus).toHaveBeenCalledTimes(1)
+  })
+
+  // 测试内容：mutations
+  // 调用函数测试伪造的函数是否被调用
+  it('mutations test', () => {
+    wrapper.vm.mutationsDecrement()
+    expect(mutations.decrement).toHaveBeenCalled()
+    expect(mutations.decrement).toHaveBeenCalledTimes(1)
   })
 
   // 测试内容：getters

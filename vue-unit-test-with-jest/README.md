@@ -1,5 +1,6 @@
 # vue-unit-test-with-jest
 ## 需要特别说明的
+### 本项目代码均为原创，如有引用请标明出处
 ### 手动开启覆盖率提示：package.json文件内 jest下增加配置"collectCoverage": true,
 ### 自定义测试文件
 ```

@@ -37,8 +37,8 @@ describe('store.js', () => {
     expect(getters.evenOrOdd(state)).toBe('odd')
   })
 
-  // 测试内容：actions b比前两个测试要稍微复杂
-  // 伪造（mock）state 测试mutations下的方法
+  // 测试内容：actions 比前两个测试要稍微复杂
+  // 伪造（mock）commit 测试mutations下的方法
   it('actions test', () => {
     // 伪造commit
     const commit = jest.fn()

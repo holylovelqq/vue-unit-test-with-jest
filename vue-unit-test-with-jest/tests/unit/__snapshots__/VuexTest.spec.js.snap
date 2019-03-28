@@ -6,5 +6,9 @@ exports[`VuexTest.vue snapshot test 1`] = `
   <div class="text">Clicked: [ 0 ] times, count is [ gettersVal ]</div>
   <app-button-stub size="lg" class="add">+1</app-button-stub>&nbsp;&nbsp;&nbsp;
   <app-button-stub size="lg" class="minus">-1</app-button-stub>
+  &nbsp;&nbsp;&nbsp;
+  <app-button-stub size="lg" class="dispatchAdd">通过dispatch+1</app-button-stub>
+  &nbsp;&nbsp;&nbsp;
+  <app-button-stub size="lg" class="mutationsMinus">通过mutations-1</app-button-stub>
 </div>
 `;
