@@ -39,7 +39,7 @@ export default {
   position: absolute;
   left: 230px;
   right: 0;
-  top: 64px;
+  top: 70px;
   bottom: 0;
   width: auto;
   padding: 32px;
