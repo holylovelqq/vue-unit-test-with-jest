@@ -3,7 +3,7 @@
  * 测试内容包括以下
  * 临时vue实例上挂载element-ui
  * func
- * vuex
+ * vuex store内的state mutations actions getters
  */
 import { shallowMount, createLocalVue } from '@vue/test-utils'
 import VuexTest from '@/components/VuexTest.vue'
