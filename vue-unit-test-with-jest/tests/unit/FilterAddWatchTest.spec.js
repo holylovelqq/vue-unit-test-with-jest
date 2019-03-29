@@ -87,7 +87,7 @@ describe('FilterTest.vue', () => {
   })
 
   // 测试内容：watch
-  // 
+  // 更改watch的data的值，断言操作是否与预期相同
   it('watch test', () => {
     // mock掉console.log
     const spy = jest.spyOn(console,'log')

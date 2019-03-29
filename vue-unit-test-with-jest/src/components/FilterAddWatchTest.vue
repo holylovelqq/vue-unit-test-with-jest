@@ -39,7 +39,7 @@ export default {
     toggleShow(newValue,oldValue){
       console.log(newValue)      
     }
-  },
+  }
 }
 </script>
 <style scoped>
