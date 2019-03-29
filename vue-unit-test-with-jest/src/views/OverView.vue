@@ -8,7 +8,7 @@
   </div>
 </template>
 <script>
-import FilterTest from '@/components/FilterTest.vue'
+import FilterTest from '@/components/FilterAddWatchTest.vue'
 import AxiosTest from '@/components/AxiosTest.vue'
 import RouterTest from '@/components/RouterTest.vue'
 import VuexTest from '@/components/VuexTest.vue'

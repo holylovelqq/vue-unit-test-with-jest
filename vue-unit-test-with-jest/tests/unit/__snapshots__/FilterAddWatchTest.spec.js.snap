@@ -2,7 +2,7 @@
 
 exports[`FilterTest.vue snapshot test 1`] = `
 <div class="example filter">
-  <h2 class="example_title">filter的单元测试例</h2>
+  <h2 class="example_title">filter和watch的单元测试例</h2>
   <el-input-stub value="" type="text" autocomplete="off" validateevent="true" placeholder="输入长度大于7的内容，下方将显示过滤后内容" class="input"></el-input-stub>
   <div class="text format"></div>
   <div class="text noformat" style="display: none;"></div>

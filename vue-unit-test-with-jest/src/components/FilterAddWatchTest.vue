@@ -1,7 +1,7 @@
 <template>
     <!-- filter的单元测试例 -->
     <div class="example filter">
-      <h2 class="example_title">filter的单元测试例</h2>
+      <h2 class="example_title">filter和watch的单元测试例</h2>
       <el-input class="input" v-model="userInput" placeholder="输入长度大于7的内容，下方将显示过滤后内容"></el-input>
       <div v-show="toggleShow" class="text format">{{userInput | formatText}}</div>
       <div v-show="!toggleShow" class="text noformat">{{userInput}}</div>
@@ -33,7 +33,13 @@ export default {
     changeShow () {
       this.toggleShow = !this.toggleShow
     }
-  }
+  },
+  // watch 的test用例
+  watch: {
+    toggleShow(newValue,oldValue){
+      console.log(newValue)      
+    }
+  },
 }
 </script>
 <style scoped>

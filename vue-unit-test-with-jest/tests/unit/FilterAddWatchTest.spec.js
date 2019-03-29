@@ -5,9 +5,10 @@
  * v-show（v-if v-bind的测试思路基本相同）
  * filter
  * 自定义func
+ * watch
  */
 import { shallowMount, createLocalVue } from '@vue/test-utils'
-import FilterTest from '@/components/FilterTest.vue'
+import FilterTest from '@/components/FilterAddWatchTest.vue'
 import Element from 'element-ui'
 
 // 创建临时Vue实例，挂载组件中使用的插件
@@ -83,6 +84,21 @@ describe('FilterTest.vue', () => {
     wrapper.vm.changeShow()
     // 期望结果
     expect(wrapper.vm.toggleShow).toBe(false)
+  })
+
+  // 测试内容：watch
+  // 
+  it('watch test', () => {
+    // mock掉console.log
+    const spy = jest.spyOn(console,'log')
+    // 手动将变量的值设置为false,默认值是true
+    wrapper.vm.toggleShow = '自定义'
+    // 断言函数是否执行
+    expect(spy).toBeCalled()
+    expect(spy).toHaveBeenCalledTimes(1)
+    expect(spy).toHaveBeenCalledWith('自定义')
+    // 清除掉mock
+    spy.mockClear()
   })
 
   // 测试内容：snapshot->概括的测试DOM结构
