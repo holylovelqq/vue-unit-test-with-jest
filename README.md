@@ -7,3 +7,4 @@
 
 ⭐关于本仓库的文档，请参考[博客](https://holylovelqq.github.io/vue/VueUnitTest.html#vue-unittest)⭐ 个人感觉看代码就足够了
 
+<img  src="/vue-unit-test-with-jest/public/test_result.png" />
