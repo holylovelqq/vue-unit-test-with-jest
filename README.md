@@ -10,3 +10,5 @@
 代码注释很多基本都能看懂，文档会包括一些概括的说明，是代码中未能体现的
 
 <img  src="/vue-unit-test-with-jest/public/test_result.png" />
+
+<img  src="/vue-unit-test-with-jest/public/スクリーンショット 2019-05-27 16.14.04.png" />
