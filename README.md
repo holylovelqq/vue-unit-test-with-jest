@@ -1,4 +1,4 @@
-# vue-project-unitTest-with-jest
+# vue-unitTest-with-jest
 
 + 最近项目进入测试期，为了能够更好地进行单元测试，查阅了很多单元测试相关的资料，其中包括拜读了一本关于vue单元测试的书。
 + 该仓库目标是实现从零开始到单元测试无障碍的进阶。
