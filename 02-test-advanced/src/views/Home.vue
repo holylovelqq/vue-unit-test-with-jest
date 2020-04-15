@@ -1,6 +1,13 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <v-row align="center">
+      <v-col class="text-center">
+        <div class="my-2 ">
+          <v-btn to="test" large depressed  color="error">点我跳转</v-btn>
+        </div>
+      </v-col>
+    </v-row>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
