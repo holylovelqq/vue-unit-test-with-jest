@@ -102,5 +102,13 @@ export default Vue.extend({
 
   computed: {},
 
-  methods: {}
+  methods: {
+    fetchData () {
+      try {
+        this.axios.get('/mockData.json').then((res) => {
+          this.desserts = res.data.data
+        })
+      } finally {}
+    }
+  }
 })
