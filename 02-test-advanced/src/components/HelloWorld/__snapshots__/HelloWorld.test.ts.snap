@@ -1,0 +1,437 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelloWorld.vue isShow为true时的snapshot测试 1`] = `
+<v-container-stub
+  tag="div"
+>
+  <div>
+    用来丰富不同测试情况
+  </div>
+   
+  <v-row-stub
+    class="text-center"
+    tag="div"
+  >
+    <v-col-stub
+      cols="12"
+      tag="div"
+    >
+      <v-img-stub
+        class="my-3"
+        contain="true"
+        height="200"
+        options="[object Object]"
+        position="center center"
+        src=""
+        transition="fade-transition"
+      />
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-4"
+      tag="div"
+    >
+      <h1
+        class="display-2 font-weight-bold mb-3"
+      >
+        
+        Welcome to Vuetify
+      
+      </h1>
+       
+      <p
+        class="subheading font-weight-regular"
+      >
+        
+        For help and collaboration with other Vuetify developers,
+        
+        <br />
+        please join our online
+        
+        <a
+          href="https://community.vuetifyjs.com"
+          target="_blank"
+        >
+          Discord Community
+        </a>
+      </p>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        What's next?
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/components/api-explorer"
+          target="_blank"
+        >
+          
+          Explore components
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/layout/pre-defined"
+          target="_blank"
+        >
+          
+          Select a layout
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/getting-started/frequently-asked-questions"
+          target="_blank"
+        >
+          
+          Frequently Asked Questions
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        Important Links
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com"
+          target="_blank"
+        >
+          
+          Documentation
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://community.vuetifyjs.com"
+          target="_blank"
+        >
+          
+          Chat
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://madewithvuejs.com/vuetify"
+          target="_blank"
+        >
+          
+          Made with Vuetify
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://twitter.com/vuetifyjs"
+          target="_blank"
+        >
+          
+          Twitter
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://medium.com/vuetify"
+          target="_blank"
+        >
+          
+          Articles
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        Ecosystem
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/vuetify-loader"
+          target="_blank"
+        >
+          
+          vuetify-loader
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/vuetify"
+          target="_blank"
+        >
+          
+          github
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/awesome-vuetify"
+          target="_blank"
+        >
+          
+          awesome-vuetify
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>
+`;
+
+exports[`HelloWorld.vue snapshot测试 1`] = `
+<v-container-stub
+  tag="div"
+>
+  <!---->
+   
+  <v-row-stub
+    class="text-center"
+    tag="div"
+  >
+    <v-col-stub
+      cols="12"
+      tag="div"
+    >
+      <v-img-stub
+        class="my-3"
+        contain="true"
+        height="200"
+        options="[object Object]"
+        position="center center"
+        src=""
+        transition="fade-transition"
+      />
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-4"
+      tag="div"
+    >
+      <h1
+        class="display-2 font-weight-bold mb-3"
+      >
+        
+        Welcome to Vuetify
+      
+      </h1>
+       
+      <p
+        class="subheading font-weight-regular"
+      >
+        
+        For help and collaboration with other Vuetify developers,
+        
+        <br />
+        please join our online
+        
+        <a
+          href="https://community.vuetifyjs.com"
+          target="_blank"
+        >
+          Discord Community
+        </a>
+      </p>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        What's next?
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/components/api-explorer"
+          target="_blank"
+        >
+          
+          Explore components
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/layout/pre-defined"
+          target="_blank"
+        >
+          
+          Select a layout
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com/getting-started/frequently-asked-questions"
+          target="_blank"
+        >
+          
+          Frequently Asked Questions
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        Important Links
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://vuetifyjs.com"
+          target="_blank"
+        >
+          
+          Documentation
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://community.vuetifyjs.com"
+          target="_blank"
+        >
+          
+          Chat
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://madewithvuejs.com/vuetify"
+          target="_blank"
+        >
+          
+          Made with Vuetify
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://twitter.com/vuetifyjs"
+          target="_blank"
+        >
+          
+          Twitter
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://medium.com/vuetify"
+          target="_blank"
+        >
+          
+          Articles
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+     
+    <v-col-stub
+      class="mb-5"
+      cols="12"
+      tag="div"
+    >
+      <h2
+        class="headline font-weight-bold mb-3"
+      >
+        
+        Ecosystem
+      
+      </h2>
+       
+      <v-row-stub
+        justify="center"
+        tag="div"
+      >
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/vuetify-loader"
+          target="_blank"
+        >
+          
+          vuetify-loader
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/vuetify"
+          target="_blank"
+        >
+          
+          github
+        
+        </a>
+        <a
+          class="subheading mx-3"
+          href="https://github.com/vuetifyjs/awesome-vuetify"
+          target="_blank"
+        >
+          
+          awesome-vuetify
+        
+        </a>
+      </v-row-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>
+`;
