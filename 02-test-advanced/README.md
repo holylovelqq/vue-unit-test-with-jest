@@ -19,6 +19,14 @@ yarn build
 ```
 yarn test:unit
 ```
+更新snapshot
+```
+yarn test:unit -u
+```
+收集覆盖率
+```
+yarn test:unit --coverage
+```
 
 ### Lints and fixes files
 ```
