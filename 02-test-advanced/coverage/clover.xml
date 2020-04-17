@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586965761371" clover="3.2.0">
-  <project timestamp="1586965761371" name="All files">
-    <metrics statements="37" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="2" elements="52" coveredelements="5" complexity="0" loc="37" ncloc="37" packages="4" files="6" classes="6"/>
+<coverage generated="1587120034202" clover="3.2.0">
+  <project timestamp="1587120034203" name="All files">
+    <metrics statements="14" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="20" coveredelements="16" complexity="0" loc="14" ncloc="14" packages="3" files="3" classes="3"/>
     <package name="components.HelloWorld">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="HelloWorld.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\HelloWorld\HelloWorld.vue">
@@ -12,51 +12,16 @@
       </file>
     </package>
     <package name="components.Table">
-      <metrics statements="11" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
-      <file name="Table.ts" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\Table\Table.ts">
-        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-      </file>
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="Table.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\Table\Table.vue">
-        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="107" count="0" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="plugins">
-      <metrics statements="19" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
-      <file name="axios.js" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\plugins\axios.js">
-        <metrics statements="15" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="53" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-      </file>
-      <file name="vuetify.ts" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\plugins\vuetify.ts">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="107" count="4" type="stmt"/>
+        <line num="109" count="4" type="stmt"/>
+        <line num="110" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="113" count="2" type="stmt"/>
+        <line num="116" count="4" type="stmt"/>
       </file>
     </package>
     <package name="store">
