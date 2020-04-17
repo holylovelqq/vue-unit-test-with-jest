@@ -22,6 +22,7 @@ module.exports = {
   // 或者设置文件、结构非常简单的文件、其他插件文件等，视具体情况适当排除
   collectCoverageFrom: [
     'src/**/*.{js,ts,vue}', // src下所有js/ts/vue文件
+    '!src/components/**/*.{js,ts}', // 只收集vue文件的覆盖率，不然不能正常显示覆盖率
     '!src/App.vue', // 入口文件排除
     '!src/main.ts', // 设置文件排除
     '!src/router/index.ts', // 路由设置文件排除（如果自己指定了不同情况下的路由守卫时，可适当测试）
