@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components.Table snapshot snapshot测试 1`] = `
+<div>
+  <v-data-table-stub
+    class="elevation-1"
+    customfilter="function defaultFilter(value, search, item) {
+  return value != null && search != null && typeof value !== 'boolean' && value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
+}"
+    customgroup="function groupItems(items, groupBy, groupDesc) {
+  var key = groupBy[0];
+  var groups = [];
+  var current = null;
+
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var val = getObjectValueByPath(item, key);
+
+    if (current !== val) {
+      current = val;
+      groups.push({
+        name: val,
+        items: []
+      });
+    }
+
+    groups[groups.length - 1].items.push(item);
+  }
+
+  return groups;
+}"
+    customsort="function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+  if (sortBy === null || !sortBy.length) return items;
+  var stringCollator = new Intl.Collator(locale, {
+    sensitivity: 'accent',
+    usage: 'sort'
+  });
+  return items.sort(function (a, b) {
+    var _a, _b;
+
+    for (var i = 0; i < sortBy.length; i++) {
+      var sortKey = sortBy[i];
+      var sortA = getObjectValueByPath(a, sortKey);
+      var sortB = getObjectValueByPath(b, sortKey);
+
+      if (sortDesc[i]) {
+        _a = __read([sortB, sortA], 2), sortA = _a[0], sortB = _a[1];
+      }
+
+      if (customSorters && customSorters[sortKey]) {
+        var customResult = customSorters[sortKey](sortA, sortB);
+        if (!customResult) continue;
+        return customResult;
+      } // Check if both cannot be evaluated
+
+
+      if (sortA === null && sortB === null) {
+        continue;
+      }
+
+      _b = __read([sortA, sortB].map(function (s) {
+        return (s || '').toString().toLocaleLowerCase();
+      }), 2), sortA = _b[0], sortB = _b[1];
+
+      if (sortA !== sortB) {
+        if (!isNaN(sortA) && !isNaN(sortB)) return Number(sortA) - Number(sortB);
+        return stringCollator.compare(sortA, sortB);
+      }
+    }
+
+    return 0;
+  });
+}"
+    expanded=""
+    expandicon="$expand"
+    groupby=""
+    groupdesc=""
+    headers="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    itemkey="id"
+    items="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    itemsperpage="5"
+    loadingtext="$vuetify.dataIterator.loadingText"
+    locale="en-US"
+    mobilebreakpoint="600"
+    nodatatext="$vuetify.noDataText"
+    noresultstext="$vuetify.dataIterator.noResultsText"
+    options="[object Object]"
+    page="1"
+    selectablekey="isSelectable"
+    serveritemslength="-1"
+    sortby=""
+    sortdesc=""
+    value=""
+  />
+   
+  <v-btn-stub
+    activeclass=""
+    class="mt-4"
+    color="error"
+    depressed="true"
+    large="true"
+    tag="button"
+    type="button"
+  >
+    点我获取mockData
+  </v-btn-stub>
+</div>
+`;

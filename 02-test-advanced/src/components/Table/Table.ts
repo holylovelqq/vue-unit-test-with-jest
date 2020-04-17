@@ -1,7 +1,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  props: {},
   data: () => ({
     headers: [
       {
@@ -97,18 +96,25 @@ export default Vue.extend({
         protein: 7,
         iron: '6%'
       }
-    ]
+    ],
+    finallyData: '',
+    error: ''
   }),
 
-  computed: {},
-
   methods: {
-    fetchData () {
+    async fetchData () {
+      // 强烈推荐使用try catch 的写法
       try {
-        this.axios.get('/mockData.json').then((res) => {
-          this.desserts = res.data.data
-        })
-      } finally {}
+        // 下面也强烈推荐使用await的写法，代码可读性高，且易于测试
+        const res = await this.$axios.get('/mockData.json')
+        this.desserts = res.data?.mockData
+      } catch (e) {
+        // 此处一般需要根据错误码来执行不同的操作,或不操作
+        this.error = 'FETCH_ERROR'
+      } finally {
+        // 此处不管请求成功与否都执行某操作（如取消loading）
+        this.finallyData = 'finished'
+      }
     }
   }
 })
