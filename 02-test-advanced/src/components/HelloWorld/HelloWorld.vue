@@ -152,7 +152,7 @@ export default Vue.extend({
   }),
 
   computed: {
-    isShow(): boolean {
+    isShow (): boolean {
       return false
     }
   }
