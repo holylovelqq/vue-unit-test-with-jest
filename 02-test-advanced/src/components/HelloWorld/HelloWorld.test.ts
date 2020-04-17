@@ -13,20 +13,23 @@
  */
 
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld/HelloWorld.vue'
+import HelloWorld from './HelloWorld.vue'
 
-describe('HelloWorld.vue', () => {
-  it('snapshot测试', () => {
-    const wrapper = shallowMount(HelloWorld)
-    expect(wrapper.vm.$el).toMatchSnapshot();
-  }),
+describe('components.HelloWorld',()=>{
+  describe('snapshots', () => {
+    it('snapshot测试', () => {
+      const wrapper = shallowMount(HelloWorld)
+      expect(wrapper.vm.$el).toMatchSnapshot();
+    }),
 
-  it('isShow为true时的snapshot测试', () => {
-    const wrapper = shallowMount(HelloWorld, {
-      computed: {
-        isShow:() => true
-      }
+    it('isShow为true时的snapshot测试', () => {
+      const wrapper = shallowMount(HelloWorld, {
+        computed: {
+          isShow:() => true
+        }
+      })
+      expect(wrapper.vm.$el).toMatchSnapshot();
     })
-    expect(wrapper.vm.$el).toMatchSnapshot();
   })
 })
+

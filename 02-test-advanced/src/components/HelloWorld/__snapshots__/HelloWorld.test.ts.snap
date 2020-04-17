@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HelloWorld.vue isShow为true时的snapshot测试 1`] = `
+exports[`components.HelloWorld snapshots isShow为true时的snapshot测试 1`] = `
 <v-container-stub
   tag="div"
 >
@@ -219,7 +219,7 @@ exports[`HelloWorld.vue isShow为true时的snapshot测试 1`] = `
 </v-container-stub>
 `;
 
-exports[`HelloWorld.vue snapshot测试 1`] = `
+exports[`components.HelloWorld snapshots snapshot测试 1`] = `
 <v-container-stub
   tag="div"
 >
