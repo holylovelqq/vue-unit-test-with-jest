@@ -102,7 +102,9 @@ exports[`components.Table snapshot snapshot测试 1`] = `
     tag="button"
     type="button"
   >
-    点我获取mockData
+    
+   点我获取mockData(axios测试用例)
+   
   </v-btn-stub>
 </div>
 `;

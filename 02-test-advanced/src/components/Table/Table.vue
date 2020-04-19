@@ -7,7 +7,15 @@
     class="elevation-1"
   ></v-data-table>
 
-   <v-btn @click="fetchData" class="mt-4" large depressed  color="error">点我获取mockData</v-btn>
+   <v-btn
+   @click="fetchData"
+   class="mt-4"
+   large
+   depressed
+   color="error"
+   >
+   点我获取mockData(axios测试用例)
+   </v-btn>
 </div>
 
 </template>
