@@ -1,6 +1,7 @@
 /**
  * axios测试的详解---jest mock 方法（不使用nock）
  * 原理：
+ *  0. mock axios 参考[jest Mocking Modules](https://jestjs.io/docs/en/mock-functions#mocking-modules)
  *  1. localVue挂载axios
  *  2. mock返回值测试正常情况
  *  3. mock出错，测试出错的情况

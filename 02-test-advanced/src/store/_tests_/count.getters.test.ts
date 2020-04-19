@@ -1,3 +1,8 @@
+/**
+ * getters 测试
+ *
+ * 声明假state 代替getters内函数的参数state
+ */
 import count, { State } from '../moduels/count'
 
 const { getters } = count

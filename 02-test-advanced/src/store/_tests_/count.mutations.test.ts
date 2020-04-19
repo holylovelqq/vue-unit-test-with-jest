@@ -1,3 +1,8 @@
+/**
+ * mutations 测试
+ *
+ * 声明假state 代替mutations内函数的参数state
+ */
 import count, { State } from '../moduels/count'
 
 const { mutations } = count
