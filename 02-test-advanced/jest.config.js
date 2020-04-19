@@ -27,7 +27,8 @@ module.exports = {
     '!src/main.ts', // 设置文件排除
     '!src/router/index.ts', // 路由设置文件排除（如果自己指定了不同情况下的路由守卫时，可适当测试）
     '!src/views/*.vue', // 文件过于简单，无测试必要性
-    '!src/plugins/*.{js,ts}' // 插件设置文件，一般不需测试，有时根据项目需求，需要增加设置，可视情况添加测试
+    '!src/plugins/*.{js,ts}', // 插件设置文件，一般不需测试，有时根据项目需求，需要增加设置，可视情况添加测试
+    '!src/store/index.ts' // 排除store 的配置文件，不包含state/mutations/actions/getters
   ],
 
   /**
