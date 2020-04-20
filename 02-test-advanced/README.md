@@ -17,6 +17,12 @@
    - axios类请求异步测试：src/componets/Table
 7. shallowMount与mount区别(必看):issue[#4](https://github.com/holylovelqq/vue-unit-test-with-jest/issues/4)，总结一句话就是请用shallowMount
 8. stubs/mocks/data/methods等可挂载项介绍，参见参见src/componets/Count
+9. 单元测试思路： （没啥正规思路，写多了就习惯了）
+   - 0. 凡是存在.vue文件的都应该写snapshot测试
+   - 1. 凡是自己写的业务逻辑都应该写单元测试
+   - 2. 避免冗余，用尽量简洁的代码测试应测内容
+   - 3. 尽量缩短测试时间，尽量优化
+   - 4. 每个测试都基于单元测试的基本思想，与要测试的内容无关的全部mock化
 
 ## Project setup
 ```
