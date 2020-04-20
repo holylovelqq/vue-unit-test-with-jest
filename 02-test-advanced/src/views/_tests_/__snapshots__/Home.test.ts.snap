@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`views.Home snapshot snapshot测试 1`] = `
+<div
+  class="home"
+>
+  <v-row-stub
+    align="center"
+    tag="div"
+  >
+    <v-col-stub
+      class="text-center"
+      tag="div"
+    >
+      <div
+        class="my-2 "
+      >
+        <v-btn-stub
+          activeclass=""
+          color="error"
+          depressed="true"
+          large="true"
+          tag="button"
+          to="test"
+          type="button"
+        >
+          点我跳转
+        </v-btn-stub>
+      </div>
+    </v-col-stub>
+  </v-row-stub>
+   
+  <helloworld-stub
+    msg="Welcome to Your Vue.js App"
+  />
+</div>
+`;
