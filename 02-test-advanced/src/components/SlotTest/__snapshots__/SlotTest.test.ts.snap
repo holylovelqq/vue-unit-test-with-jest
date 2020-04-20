@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components.SlotTest snapshot snapshot测试 1`] = `
+<div>
+   slot测试默认内容 
+</div>
+`;
