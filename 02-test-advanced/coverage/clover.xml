@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587120034202" clover="3.2.0">
-  <project timestamp="1587120034203" name="All files">
-    <metrics statements="14" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4" elements="20" coveredelements="16" complexity="0" loc="14" ncloc="14" packages="3" files="3" classes="3"/>
+<coverage generated="1587379693914" clover="3.2.0">
+  <project timestamp="1587379693914" name="All files">
+    <metrics statements="36" coveredstatements="36" conditionals="4" coveredconditionals="4" methods="17" coveredmethods="17" elements="57" coveredelements="57" complexity="0" loc="36" ncloc="36" packages="6" files="7" classes="7"/>
+    <package name="components.Count">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="Count.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\Count\Count.vue">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="components.HelloWorld">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="HelloWorld.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\HelloWorld\HelloWorld.vue">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="96" count="1" type="stmt"/>
+        <line num="96" count="2" type="stmt"/>
         <line num="101" count="2" type="stmt"/>
         <line num="156" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Picture">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="Picture.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\Picture\Picture.vue">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
       </file>
     </package>
     <package name="components.Table">
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="Table.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\components\Table\Table.vue">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="1" count="2" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
         <line num="107" count="4" type="stmt"/>
         <line num="109" count="4" type="stmt"/>
@@ -24,14 +46,35 @@
         <line num="116" count="4" type="stmt"/>
       </file>
     </package>
-    <package name="store">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\store\index.ts">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
+    <package name="store.moduels">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="count.ts" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\store\moduels\count.ts">
+        <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="views">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Home.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\views\Home.vue">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="Test.vue" path="D:\github仓库\vue-unit-test-with-jest\02-test-advanced\src\views\Test.vue">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
       </file>
     </package>
   </project>
