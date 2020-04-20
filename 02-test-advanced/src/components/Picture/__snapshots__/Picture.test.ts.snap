@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`componets.Picture snapshot 图片显示时snapshot测试 1`] = `
+<div>
+  <v-btn-stub
+    activeclass=""
+    class="mt-4"
+    color="warning"
+    depressed="true"
+    large="true"
+    tag="button"
+    type="button"
+  >
+    
+ 点击一秒后显示/隐藏图片（定时器测试用例）
+ 
+  </v-btn-stub>
+   
+  <!---->
+</div>
+`;
+
+exports[`componets.Picture snapshot 图片隐藏时snapshot测试 1`] = `
+<div>
+  <v-btn-stub
+    activeclass=""
+    class="mt-4"
+    color="warning"
+    depressed="true"
+    large="true"
+    tag="button"
+    type="button"
+  >
+    
+ 点击一秒后显示/隐藏图片（定时器测试用例）
+ 
+  </v-btn-stub>
+   
+  <!---->
+</div>
+`;

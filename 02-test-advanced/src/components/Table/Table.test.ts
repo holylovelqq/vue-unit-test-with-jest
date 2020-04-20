@@ -1,5 +1,7 @@
 /**
  * axios测试的详解---使用nock进行测试（推荐）
+ *
+ * 此处还包含了异步测试的写法
  */
 
 import { shallowMount } from '@vue/test-utils'
