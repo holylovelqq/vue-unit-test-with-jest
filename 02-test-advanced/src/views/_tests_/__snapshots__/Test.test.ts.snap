@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`views.Test snapshot snapshot测试 1`] = `
+<div>
+  <table-test-stub
+    class="mb-4"
+  />
+   
+  <v-divider-stub />
+   
+  <count-test-stub
+    class="mt-4"
+  />
+   
+  <v-divider-stub />
+   
+  <picture-test-stub
+    class="my-4"
+  />
+   
+  <v-divider-stub />
+   
+  <div
+    class="ma-4"
+  >
+    
+      slot测试自定义内容
+    
+  </div>
+</div>
+`;
