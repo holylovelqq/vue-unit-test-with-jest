@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components.Count snapshot snapshot测试 1`] = `
+<div
+  class="ml-4"
+>
+  <div>
+     store 测试：
+  </div>
+   
+  <div
+    class="mt-2"
+  >
+    <v-btn-stub
+      activeclass=""
+      class="mr-2"
+      color="primary"
+      small="true"
+      tag="button"
+      type="button"
+    >
+      -
+    </v-btn-stub>
+    
+     0
+     
+    <v-btn-stub
+      activeclass=""
+      class="ml-2"
+      color="primary"
+      small="true"
+      tag="button"
+      type="button"
+    >
+      +
+    </v-btn-stub>
+     
+    <v-chip-stub
+      active="true"
+      activeclass=""
+      class="ma-2"
+      closeicon="$delete"
+      filtericon="$complete"
+      tag="span"
+    >
+       even
+    </v-chip-stub>
+  </div>
+</div>
+`;
