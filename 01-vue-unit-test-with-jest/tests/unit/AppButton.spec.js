@@ -53,7 +53,7 @@ describe('AppButton.vue', () => {
 
   // 测试内容：func测试
   // 点击按钮组件时，正确触发点击事件
-  it('click button onClick is clled', () => {
+  it('click button onClick is called', () => {
     const wrapper = shallowMount(AppButton)
     // 创建mock函数
     const mockFn = jest.fn()
