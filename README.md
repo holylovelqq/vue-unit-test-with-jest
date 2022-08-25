@@ -16,7 +16,7 @@ expect(wrapper.vm.mockFn).toBeCalledWith('xx');
 ```
 上面测试代码看似没有问题，其实toBeCalledWith('xx')就能保证toBeCalled()，所以toBeCalled()这一行应该删除。但是本仓库基于教学的目的并没有这么做，而是保留了。
 
-⭐关于本仓库的文档，请参考[博客](https://holylovelqq.github.io/vue/VueUnitTest.html#vue-unittest)(业余时间不定时更新，欢迎关注)⭐ 博客多是基础篇的教程，对基础知识的理解很有用。
+<!-- ⭐关于本仓库的文档，请参考[博客](https://holylovelqq.github.io/vue/VueUnitTest.html#vue-unittest)(业余时间不定时更新，欢迎关注)⭐ 博客多是基础篇的教程，对基础知识的理解很有用。 -->
 
 代码注释很多基本都能看懂，文档会包括一些概括的说明，是代码中未能体现的
 
