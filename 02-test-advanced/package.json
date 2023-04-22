@@ -41,7 +41,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "nock": "^12.0.3",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.2",
     "typescript": "~3.8.3",
